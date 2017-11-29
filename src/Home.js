@@ -14,7 +14,7 @@ import FormGroup from './FormGroup';
 import Squares from './Squares';
 import { Link, Route } from 'react-router-dom';
 import MoreFood from './MoreFood';
-
+import { localURL } from './keys';
 
 class Home extends Component {
     constructor() {
@@ -35,7 +35,7 @@ class Home extends Component {
 
     addImg(downloadURL) {
 
-        axios.post('/foodify', { downloadURL })
+        axios.post(localURL + localURL + '/foodify', { downloadURL })
             .then(result => {
                 console.log(result.data);
                 let allFood = result.data
@@ -85,7 +85,7 @@ class Home extends Component {
             () => {
                 let downloadURL = task.snapshot.downloadURL;
 
-                axios.post('/foodify', { downloadURL })
+                axios.post(localURL + '/foodify', { downloadURL })
                     .then(result => {
                         console.log(result.data);
                         let allFood = result.data

@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import Nav from './Nav';
 import TopBar from './TopBar';
-
+import { localURL } from './keys';
 class Squares extends React.Component {
     constructor() {
         super()
@@ -23,7 +23,7 @@ class Squares extends React.Component {
 
 
     componentWillMount() {
-        axios.get('/foodify')
+        axios.get(localURL + '/foodify')
             .then(result => {
                 this.setState({
                     past: result.data

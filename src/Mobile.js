@@ -8,7 +8,7 @@ import Dropzone from 'react-dropzone';
 import MobileTabs from './MobileTabs';
 import All from './All';
 import { Helmet } from "react-helmet";
-
+import { localURL } from './keys';
 
 class Mobile extends React.Component {
     constructor() {
@@ -39,7 +39,7 @@ class Mobile extends React.Component {
             () => {
                 let downloadURL = task.snapshot.downloadURL;
 
-                axios.post('/foodify', { downloadURL })
+                axios.post(localURL + '/foodify', { downloadURL })
                     .then(result => {
                         console.log(result.data);
                         let allFood = result.data
@@ -95,7 +95,7 @@ class Mobile extends React.Component {
             },
             () => {
                 let downloadURL = task.snapshot.downloadURL;
-                axios.post('/foodify', { downloadURL })
+                axios.post(localURL + '/foodify', { downloadURL })
                     .then(result => {
                         console.log(result.data);
                         let allFood = result.data

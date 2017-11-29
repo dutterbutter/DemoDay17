@@ -25,33 +25,33 @@ class App extends Component {
 
    
   }
-  detectmob() { 
-    if( navigator.userAgent.match(/Android/i)
-    || navigator.userAgent.match(/webOS/i)
-    || navigator.userAgent.match(/iPhone/i)
-    || navigator.userAgent.match(/iPad/i)
-    || navigator.userAgent.match(/iPod/i)
-    || navigator.userAgent.match(/BlackBerry/i)
-    || navigator.userAgent.match(/Windows Phone/i)
-    ){
-       return <Mobile />;
-     }
-    else {
-       return <Home />;
-     }
-   }
-//   detectmob() {
+  // detectmob() { 
+  //   if( navigator.userAgent.match(/Android/i)
+  //   || navigator.userAgent.match(/webOS/i)
+  //   || navigator.userAgent.match(/iPhone/i)
+  //   || navigator.userAgent.match(/iPad/i)
+  //   || navigator.userAgent.match(/iPod/i)
+  //   || navigator.userAgent.match(/BlackBerry/i)
+  //   || navigator.userAgent.match(/Windows Phone/i)
+  //   ){
+  //      return <Mobile />;
+  //    }
+  //   else {
+  //      return <Home />;
+  //    }
+  //  }
+  detectmob() {
   
-//     if(window.innerWidth <= 800 && window.innerHeight <= 750) {
-//       return <Mobile />;
-//     } else {
-//       return <Home />;
-//     }
-//  }
+    if(window.innerWidth <= 800 && window.innerHeight <= 750) {
+      return <Mobile />;
+    } else {
+      return <Home />;
+    }
+ }
 
   render() {
 
-    let detection = this.detectmob()
+
     
   
     return (

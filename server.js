@@ -18,6 +18,8 @@ const MONGO_CONNECTION_STRING = 'mongodb://localhost:27017/data/db'
 mongoose.connect(MONGO_CONNECTION_STRING);
 const connection = mongoose.connection;
 
+
+app.use(express.static(__dirname+'/build'))
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 app.use(cors());
@@ -132,6 +134,12 @@ app.get('/foodify', (req, res) => {
 //             console.log(error);
 //         })
 // })
+
+
+app.get('*', (req, res) => {
+    res.sendFile(__dirname+'/build/index.html')
+})
+
 
 connection.on("open", () => {
     console.log("we are connected to mongo");

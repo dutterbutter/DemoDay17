@@ -13,7 +13,7 @@ class Squares extends React.Component {
     }
 
     // removeFood(id) {
-    //     axios.delete(`http://localhost:8080/foodify/${id}`)
+    //     axios.delete(`/foodify/${id}`)
     //         .then(result => {
     //             this.setState({
     //                 past: result.data
@@ -23,7 +23,7 @@ class Squares extends React.Component {
 
 
     componentWillMount() {
-        axios.get('http://localhost:8080/foodify')
+        axios.get('/foodify')
             .then(result => {
                 this.setState({
                     past: result.data

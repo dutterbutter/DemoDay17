@@ -39,7 +39,7 @@ class Mobile extends React.Component {
             () => {
                 let downloadURL = task.snapshot.downloadURL;
 
-                axios.post('http://localhost:8080/foodify', { downloadURL })
+                axios.post('/foodify', { downloadURL })
                     .then(result => {
                         console.log(result.data);
                         let allFood = result.data
@@ -95,7 +95,7 @@ class Mobile extends React.Component {
             },
             () => {
                 let downloadURL = task.snapshot.downloadURL;
-                axios.post('http://localhost:8080/foodify', { downloadURL })
+                axios.post('/foodify', { downloadURL })
                     .then(result => {
                         console.log(result.data);
                         let allFood = result.data

@@ -6,7 +6,7 @@ class NavBar extends Component {
     return (
       <nav>
         <div className="nav-wrapper nav">
-          <div className="left web-title">Foodify</div>
+          <div className="left web-title"><Link to ='/'>Foodify</Link></div>
           <img src="./food.png" width="30" height="30" className=" logo-img left align-top" alt="foodify" />
           <div className="right hide-on-med-and-down">
             <a href="#" data-activates="mobile-demo" className="button-collapse"><i className="material-icons">menu</i></a>

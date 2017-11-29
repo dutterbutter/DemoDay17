@@ -29,7 +29,7 @@ class App extends Component {
 
   detectmob() {
     
-    if(window.innerWidth <= 800 && window.innerHeight <= 600) {
+    if(window.innerWidth <= 800 && window.innerHeight <= 750) {
       return <Mobile />;
     } else {
       return <Home />;

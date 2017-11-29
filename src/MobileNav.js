@@ -31,8 +31,8 @@ class MobileNav extends React.Component {
             <div>
                 <nav className="nav-extended">
                     <div className="nav-wrapper">
-                        <a href="#" className="brand-logo center-align">
-                           
+                        <a className="brand-logo center-align">
+                        <Link to="/">
                                 <span style={f}>F</span>
                                 <span style={o}>o</span>
                                 <span style={o2}>o</span>
@@ -40,7 +40,7 @@ class MobileNav extends React.Component {
                                 <span style={i}>i</span>
                                 <span style={f2}>f</span>
                                 <span style={y}>y</span>
-                           
+                        </Link>
                         </a>
                         <a href="#" data-activates="mobile-demo" className="button-collapse"><i className="material-icons">menu</i></a>
                         <ul id="nav-mobile" className="right hide-on-med-and-down">

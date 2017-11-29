@@ -25,16 +25,29 @@ class App extends Component {
 
    
   }
-
-
-  detectmob() {
-    
-    if(window.innerWidth <= 800 && window.innerHeight <= 750) {
-      return <Mobile />;
-    } else {
-      return <Home />;
-    }
- }
+  detectmob() { 
+    if( navigator.userAgent.match(/Android/i)
+    || navigator.userAgent.match(/webOS/i)
+    || navigator.userAgent.match(/iPhone/i)
+    || navigator.userAgent.match(/iPad/i)
+    || navigator.userAgent.match(/iPod/i)
+    || navigator.userAgent.match(/BlackBerry/i)
+    || navigator.userAgent.match(/Windows Phone/i)
+    ){
+       return <Mobile />;
+     }
+    else {
+       return <Home />;
+     }
+   }
+//   detectmob() {
+  
+//     if(window.innerWidth <= 800 && window.innerHeight <= 750) {
+//       return <Mobile />;
+//     } else {
+//       return <Home />;
+//     }
+//  }
 
   render() {
 
@@ -48,11 +61,8 @@ class App extends Component {
 
           <div>
             {this.detectmob()}
-            {/* <Route path="/" exact render={() => <Home />} /> */}
-            <Route path="/foodify" render={() => <Squares />} />
-            <Route path ="/foodifyMobile" render={() => <Mobile />} />
+            <Route path="/squares" render={() => <Squares />} />
             <Route path ="/GoogleVision" render={() => <GoogleVision />} />
-            <Route path="/foodifyMobile/Author" render={() => <Author />} />
           </div >
         
         {/* <a className="waves-effect waves-light btn"><Link to="/foodifyMobile">mobile</Link></a> */}

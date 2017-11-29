@@ -266,7 +266,9 @@ font-family: 'Lato', sans-serif;
   margin-top: 10%;
 }
 
-
+.cloud-content{
+  color:white;
+}
 
 .page-footer{
   background-color: #ffda06;

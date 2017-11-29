@@ -1,0 +1,7 @@
+/node_modules
+/build
+/data
+/logpath
+.env
+DemoDay 2017-cd48840b37c9.json
+/src/keys.js

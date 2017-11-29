@@ -1,0 +1,346 @@
+body {
+  text-align: center;
+  background-color: #3d3c3d;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.sideMob{
+  background-color:#ffb207;
+}
+
+nav{
+  height: 80px;
+  width: 100%;
+  background-color: #ffb207;
+}
+
+.accor{
+margin: 10px;
+border: 1px solid #ddd;
+transition: 0.4s
+}
+.head {
+  background: #eee;
+  padding: 10px 20px;
+  cursor: pointer
+}
+.body {
+background: #fafafa;
+padding: 0 20px;
+max-height: 0;
+overflow: hidden;
+transition: 200ms ease-in-out;
+}
+.active > .body {
+padding: 10px 20px;
+max-height: 600px
+}
+.MuiAvatar-colorDefault-40{
+  background-color:white !important;
+  color: black !important;
+}
+
+.MuiAvatar-root-39{
+  width: 53px !important;
+  height: 53px !important;
+}
+
+.ingredient-title {
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+}
+.time{
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+  color:green;
+}
+
+.RecipeReviewCard-card-1{
+  margin-bottom: 5%;
+}
+.Wikipedia-content {
+  text-align: justify;
+}
+.learn {
+  padding-top:5%;
+  text-align: left;  
+}
+
+
+.dish-title {
+  text-transform: uppercase;
+}
+
+.ingredients-body{
+  text-align: left;
+  font-family: 'Lato', sans-serif;
+}
+.web-title{
+  font-family: 'Courgette', cursive;
+  color:black;
+  text-align:left;
+  margin-left:5%;
+  font-size: 2.2em;
+  padding-top:1%;
+}
+.brand-logo{
+  font-family: 'Courgette', cursive;
+}
+.logo-img{
+  margin-left:.5%;
+  margin-top:2%;
+}
+.topBar{
+  padding-bottom:1.5%;
+  padding-left:1.2%;
+  width: 5%;
+  height: 5%;
+}
+.instruction{
+  text-align: right;
+  font-family: 'Lato', sans-serif;
+  font-size: .8em;
+  word-wrap: break-word;
+}
+.word{
+  text-align: right;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.3em;
+  word-wrap: break-word;
+  color:black;
+}
+.how-works{
+  display: inline-block;
+  margin-top: 2%;
+  margin-right: 1.5%;
+  line-height: 1;
+  color:black;
+}
+.card-height {
+  height:500px !important;
+}
+.card.medium .card-image{
+  max-height:40% !important;
+}
+.card .card-content{
+  padding: 5px 24px 5px 24px !important;
+}
+.card-title {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+}
+.Wikipedia-content{
+  height: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: 'Lato', sans-serif;
+}
+
+.explain{
+  display: inline-block;
+  margin-top: 2%;
+  margin-right:5%;
+  line-height: 1;
+  color:black;
+}
+.color-bar{
+  height: 24px;
+  width:10%;
+  display: inline-block; 
+  z-index:100;
+}
+.color-line{
+  height: 5px;
+  width:12.5%;
+  display: inline-block; 
+  z-index:100;
+}
+.colorMe{
+  width:100%;
+}
+.move .next{
+  display: inline-block;
+  cursor: default;
+}
+.dish-title {
+  display: inline-block;
+}
+.title{
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+}
+.collection{
+  text-align: left;
+  font-family: 'Lato', sans-serif;
+}
+.instruct{
+  margin-top:2%;
+  color:white;
+}
+
+#dropzone{
+  display: block;
+  margin: 10px;
+  border: 5px dashed #ffffff;
+  border-radius: 0px;
+  cursor: copy;
+  background-position: center center;
+  height:250px;
+ 
+}
+div .clickable:hover{
+  background-color:#00cd00;
+  border: 5px dashed #000080; 
+  color: black; 
+}
+#dropzone div:nth-child(1) {
+  border:none !important;
+  width: 50% !important;
+  position: absolute !important;
+}
+
+.clickable{
+  background: #7f7f7f right 20px center no-repeat;
+  display: inline-block;
+}
+.direction{
+  display: inline-block;
+  margin-right:50%;
+  margin-bottom: 20%;  
+  font-size: 1.4em;
+  color:white;
+  font-family: 'Lato', sans-serif;
+}
+.iconImg {
+  color:white;
+}
+
+.recipe-name{
+  color:black;
+  font-weight: bold;
+}
+.or{
+  font-size: 2em;
+  font-weight: bold;
+  color:white;
+  font-family: 'Lato', sans-serif;
+}
+.other{
+color: white;
+font-family: 'Lato', sans-serif;
+
+}
+.title-body {
+  color:black;
+}
+.img-side {
+  width: 100%;
+  height:100%;
+}
+.img-icon{
+  padding-left:5%;
+  margin-left: 35%;
+  margin-top:10%;
+}
+.tabs{
+  font-family: 'Roboto', sans-serif;
+}
+
+.color-row{
+  width:100%;
+}
+.colors{
+  height:10px;
+  
+  bottom:0;
+  width:25%;
+  display: inline-block; 
+}
+.photo-icon{
+  font-size: 6rem;
+  margin-left: 135%;
+  margin-top: 10%;
+}
+
+
+
+.page-footer{
+  background-color: #ffda06;
+  color:black;
+}
+.title-sq {
+  text-align: left;
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+}
+.desc-sq {
+  text-align: left;
+  font-family: 'Lato', sans-serif;
+  font-size: .8em;
+  overflow: hidden;
+}
+.other-title {
+  text-align: left;
+  font-weight: bold;
+  font-family: 'Courgette', cursive;
+  font-size: 3em;
+  color: #ffda06;
+}
+.line{
+  position: relative;
+  left:87%;
+  top:4%;
+  bottom:89%;
+  border-left:1.5px dashed black;
+}
+.ing{
+  text-align: left;
+}
+.lineWord{
+  font-family: 'Lato', sans-serif;
+  font-size: .2em;
+  word-wrap: break-word;
+}
+
+.input-field {
+  border: 1px solid black;
+}
+
+
+.cloud-title{
+  color:#ffda06;
+  font-family: 'Lato', sans-serif;
+  font-size: 2.5em;
+}
+
+
+
+
+
+#dropzone2 div:nth-child(1) {
+  border:none !important;
+  height: 35px !important;
+  width: 100% !important;
+  position: absolute !important;
+}
+
+#dropzone2{
+  display: block;
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 0px;
+  cursor: copy;
+  background-position: center center;
+  height:35px;
+ 
+}
+
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

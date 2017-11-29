@@ -21,21 +21,37 @@ class App extends Component {
     }
     const config = Deploy.configFire;
     firebase.initializeApp(config);
+    this.detectmob = this.detectmob.bind(this)
+
+   
   }
+
+
+  detectmob() {
+    
+    if(window.innerWidth <= 800 && window.innerHeight <= 600) {
+      return <Mobile />;
+    } else {
+      return <Home />;
+    }
+ }
+
   render() {
 
-
-
+    let detection = this.detectmob()
+    
+  
     return (
       //past={this.state.pastFood} 
       <div>
-   
+        
 
           <div>
-            <Route path="/" exact render={() => <Home />} />
+            {this.detectmob()}
+            {/* <Route path="/" exact render={() => <Home />} /> */}
             <Route path="/foodify" render={() => <Squares />} />
             <Route path ="/foodifyMobile" render={() => <Mobile />} />
-            <Route path ="/foodifyMobile/GoogleVision" render={() => <GoogleVision />} />
+            <Route path ="/GoogleVision" render={() => <GoogleVision />} />
             <Route path="/foodifyMobile/Author" render={() => <Author />} />
           </div >
         

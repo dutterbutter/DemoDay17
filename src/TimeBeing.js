@@ -13,19 +13,21 @@ class TimeBeing extends Component {
                 <form action="#">
                     <div className="file-field input-field">
                         <div className="btn foodMob">
-                        File
-                            
+                            File
+
                         </div>
-                        <div id="dropzone2">  
+                        <div id="dropzone2">
                             <Dropzone onDrop={this.props.onDrop} />
                         </div>
                     </div>
                 </form>
-                <div className="file-field input-field">
-                <div className="btn foodImg" onClick= {() => {this.props.addImg()} }>
-                    Camera
+                <form action="#">
+                    <div className="file-field input-field">
+                        <div className="btn foodImg" onClick={() => { this.props.addImg() }}>
+                            Camera
                 </div>
-                </div>
+                    </div>
+                </form>
             </div>
 
         )

@@ -6,7 +6,7 @@ class TopBar extends Component {
         let cb;
         if(window.screen.width > 780){
             //cb = [0,1,2,3,4,5,6,7,8,9];
-            cb= ["#0092c9","#ff0000","#ff9b00","#11a51b","#ffffff","#0092c9","#ff0000","#ff9b00","#11a51b","#ffffff"]
+            cb= ["#0092c9","#ff0000","#ffda06","#11a51b","#ffffff","#0092c9","#ff0000","#ffda06","#11a51b","#ffffff"]
         }else{
             cb=["#0092c9","#ff0000","#ff9b00","#11a51b","#ffffff"];
         }

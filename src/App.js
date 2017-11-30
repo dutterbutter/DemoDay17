@@ -41,7 +41,7 @@ class App extends Component {
     
   
     return (
-      //past={this.state.pastFood} 
+      
       <div>
         
 

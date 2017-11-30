@@ -149,9 +149,7 @@ class Home extends Component {
                         <div className="row">
                             <FormGroup addImg={this.addImg} />
                             {/* <NavInput onDrop= {this.onDrop} /> */}
-                            <div className="col s4">
-                                <a className="waves-effect waves-light btn"><Link to="/foodify" className="other">Others</Link><i className="material-icons left">group</i></a>
-                            </div>
+                          
                         </div>
                     </div>
                     <RecipeReviewCard
@@ -162,7 +160,7 @@ class Home extends Component {
                     />
 
                 </div>
-                <Route path="/foodifyMobile/MoreFood" render={() => <MoreFood />} />
+               
                 
             </div>
 

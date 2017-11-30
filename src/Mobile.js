@@ -9,6 +9,8 @@ import MobileTabs from './MobileTabs';
 import All from './All';
 import { Helmet } from "react-helmet";
 import { localURL } from './keys';
+import Squares from './Squares';
+
 
 class Mobile extends React.Component {
     constructor() {
@@ -147,7 +149,10 @@ class Mobile extends React.Component {
                 <TimeBeing onDrop={this.onDrop} />
                 <MobileTabs />
                 <All food={this.state.food} />
+
+                <Route path="/sqaures" render={() => <Squares />} />
             </div>
+
         )
     }
 }

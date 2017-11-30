@@ -12,18 +12,7 @@ class Squares extends React.Component {
         this.state = {
             past: []
         }
-        // this.removeFood = this.removeFood.bind(this)
     }
-
-    // removeFood(id) {
-    //     axios.delete(`/foodify/${id}`)
-    //         .then(result => {
-    //             this.setState({
-    //                 past: result.data
-    //             })
-    //         })
-    // }
-
 
     componentWillMount() {
         axios.get(localURL + '/foodify')
@@ -64,7 +53,6 @@ class Squares extends React.Component {
                 </div>
                 <div className="card-content">
                     <span className="card-title activator grey-text text-darken-4 title-sq">{el.visionName}<i className="material-icons right">more_vert</i></span>
-                    {/* <button><i class="material-icons right" onClick={this.removeFood(el._id)}>delete</i></button> */}
                     <div className="card-content desc-sq">
                         <p className="">{el.description}</p>
                     </div>

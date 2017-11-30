@@ -21,10 +21,9 @@ class TimeBeing extends Component {
                         </div>
                     </div>
                 </form>
-                {/* <div className="col s12" id="dropzone2">
-                    <Dropzone onDrop={this.props.onDrop} />
-
-                </div> */}
+                <div className="btn foodImg" onClick= {() => {this.props.addImg()} }>
+                    Camera
+                </div>
             </div>
 
         )

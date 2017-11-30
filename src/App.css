@@ -356,7 +356,9 @@ font-family: 'Lato', sans-serif;
   width: 100%;
   display: inline-block;
 }
-
+.foodImg{
+  width:100%;
+}
 .mobile-view{
   display: none;
 }

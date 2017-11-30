@@ -146,7 +146,7 @@ class Mobile extends React.Component {
                 </Helmet>
                 
                 <MobileNav addImg={this.addImg} />
-                <TimeBeing onDrop={this.onDrop} />
+                <TimeBeing onDrop={this.onDrop} addImg={this.addImg} />
                 <MobileTabs />
                 <All food={this.state.food} />
 

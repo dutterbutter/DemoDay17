@@ -136,7 +136,7 @@ class Mobile extends React.Component {
     render() {
 
         return (
-            <div>
+            <div className="mobile-view">
                 <Helmet>
                     <meta charSet="utf-8" />
                     <title>Foodify</title>

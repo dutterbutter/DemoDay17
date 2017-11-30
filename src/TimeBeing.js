@@ -7,16 +7,26 @@ class TimeBeing extends Component {
     render() {
 
         return (
-            
-                <div className="row mobileBar">
-                    {/* <ImageCapture /> */}
-                   
-                    <div className="col s12" id="dropzone2">
-                        <Dropzone onDrop={this.props.onDrop} />
-                            Add an image file
+
+            <div className="row mobileBar">
+                {/* <ImageCapture /> */}
+                <form action="#">
+                    <div className="file-field input-field">
+                        <div className="btn foodMob">
+                        File
+                            
+                        </div>
+                        <div id="dropzone2">  
+                            <Dropzone onDrop={this.props.onDrop} />
+                        </div>
                     </div>
-                </div>
-           
+                </form>
+                {/* <div className="col s12" id="dropzone2">
+                    <Dropzone onDrop={this.props.onDrop} />
+
+                </div> */}
+            </div>
+
         )
     }
 }

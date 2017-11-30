@@ -132,7 +132,7 @@ class Home extends Component {
 
         return (
 
-            <div>
+            <div className="desktop-view">
                 <Helmet>
                     <meta charSet="utf-8" />
                     <title>Foodify</title>

@@ -11,7 +11,7 @@ import Home from './Home';
 import GoogleVision from './GoogleVision';
 import Author from './Author';
 import Deploy from './keys.js';
-
+import Main from './Main';
 
 class App extends Component {
   constructor() {
@@ -21,33 +21,19 @@ class App extends Component {
     }
     const config = Deploy.configFire;
     firebase.initializeApp(config);
-    this.detectmob = this.detectmob.bind(this)
+    // this.detectmob = this.detectmob.bind(this)
 
    
   }
-  // detectmob() { 
-  //   if( navigator.userAgent.match(/Android/i)
-  //   || navigator.userAgent.match(/webOS/i)
-  //   || navigator.userAgent.match(/iPhone/i)
-  //   || navigator.userAgent.match(/iPad/i)
-  //   || navigator.userAgent.match(/iPod/i)
-  //   || navigator.userAgent.match(/BlackBerry/i)
-  //   || navigator.userAgent.match(/Windows Phone/i)
-  //   ){
-  //      return <Mobile />;
-  //    }
-  //   else {
-  //      return <Home />;
-  //    }
-  //  }
-  detectmob() {
   
-    if(window.innerWidth <= 800 && window.innerHeight <= 750) {
-      return <Mobile />;
-    } else {
-      return <Home />;
-    }
- }
+//   detectmob() {
+  
+//     if(window.innerWidth <= 800 && window.innerHeight <= 750) {
+//       return <Mobile />;
+//     } else {
+//       return <Home />;
+//     }
+//  }
 
   render() {
 
@@ -60,7 +46,8 @@ class App extends Component {
         
 
           <div>
-            {this.detectmob()}
+            {/* {this.detectmob()} */}
+            <Route path="/" exact render ={() => <Main/>}/>
             <Route path="/squares" render={() => <Squares />} />
             <Route path ="/GoogleVision" render={() => <GoogleVision />} />
           </div >

@@ -1,14 +1,15 @@
 import React from 'react';
 import { Link, Route } from 'react-router-dom';
-// import Nav from './Nav';
-// import TopBar from './TopBar';
+import Nav from './Nav';
+import TopBar from './TopBar';
 
 class GoogleVision extends React.Component {
     render() {
         return (
             <div>
-                {/* <Nav />
-                <TopBar /> */}
+                
+                <Nav />
+                <TopBar />
                 <div className="container">
                     <div className="row">
                         <h1 className="cloud-title left-align">CLOUD VISION API</h1>

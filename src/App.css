@@ -320,26 +320,55 @@ font-family: 'Lato', sans-serif;
 }
 
 
+/* .tabs .indicator {
+    color: <ur color>;
+} */
+.foodMob{
+  display: inline-block;
+  height: 50%;
+}
+
+.file-field.input-field {
+  height:50px;
+  margin: none;
+}
+
+
+
 
 
 
 #dropzone2 div:nth-child(1) {
+  
   border:none !important;
-  height: 35px !important;
+  height: 100% !important;
   width: 100% !important;
-  position: absolute !important;
 }
-
 #dropzone2{
-  display: block;
-  margin: 10px;
-  border: 1px solid black;
   border-radius: 0px;
   cursor: copy;
-  background-position: center center;
-  height:35px;
- 
+  position: absolute;
+  top:0;
+  left:0;
+  height:42px;
+  width: 20%;
+  display: inline-block;
 }
+
+.mobile-view{
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .mobile-view{
+    display: block;
+  }
+  .desktop-view{
+    display: none;
+  }
+}
+
+
 
 
 @keyframes App-logo-spin {

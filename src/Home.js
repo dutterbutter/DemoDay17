@@ -144,10 +144,9 @@ class Home extends Component {
                 <div className="App" >
                     <TopBar />
                     <Upload onDrop={this.onDrop} />
-                    <div className="or align-center">OR </div>
                     <div className="container">
                         <div className="row">
-                            <FormGroup addImg={this.addImg} />
+                            {/* <FormGroup addImg={this.addImg} /> */}
                             {/* <NavInput onDrop= {this.onDrop} /> */}
                           
                         </div>

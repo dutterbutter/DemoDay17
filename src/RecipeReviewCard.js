@@ -47,7 +47,7 @@ class RecipeReviewCard extends React.Component {
             index: 0
         }
         this.nextGuess = this.nextGuess.bind(this)
-    }   
+    }
     state = { expanded: false };
     state = { open: false };
 
@@ -61,7 +61,7 @@ class RecipeReviewCard extends React.Component {
 
     nextGuess(direction) {
         this.setState({
-            index: this.state.index+direction
+            index: this.state.index + direction
         })
     }
 
@@ -82,12 +82,12 @@ class RecipeReviewCard extends React.Component {
 
         let foodInfo = this.props.food;
         let score;
-   
+
         let placeJSX = foodInfo.map((el, i) => {
             let places = el.places.results
             return <Places place={places} />
 
-          })
+        })
 
 
         let foodJSX = foodInfo.map((el, i) => {
@@ -98,13 +98,13 @@ class RecipeReviewCard extends React.Component {
             let recipeDetail = el.yummly.matches;
             let foodTitle = el.vision.webEntities[this.state.index].description;
             let dishTitle = <div className="move"><a className={this.state.index <= 0 ? "disabled" : ""} onClick={() => this.nextGuess(-1)} ><i className="material-icons next disabled">navigate_before</i></a>
-                            <div className="dish-title">{foodTitle}</div>
-                            <i className="material-icons next" onClick={() => this.nextGuess(+1)}>navigate_next</i>
-                            </div>
-                          
+                <div className="dish-title">{foodTitle}</div>
+                <i className="material-icons next" onClick={() => this.nextGuess(+1)}>navigate_next</i>
+            </div>
+
 
             let wikiPedia = <div className="Wikipedia-content">{wiki}</div>
-            
+
             return <div className="col s6 ">
                 <MuiThemeProvider>
 
@@ -165,7 +165,7 @@ class RecipeReviewCard extends React.Component {
                                     <RecipeList recipeTitle={recipeDetail} />
                                 </CardContent>
                             </Collapse>
-                            
+
                         </div>
                     </Card>
                 </MuiThemeProvider>
@@ -180,7 +180,7 @@ class RecipeReviewCard extends React.Component {
             <div className="container">
                 <div className="row">
                     {foodJSX}
-                  {placeJSX}
+                    {placeJSX}
                 </div>
             </div>
         );

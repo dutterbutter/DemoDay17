@@ -6,7 +6,7 @@ class FormGroup extends Component {
   constructor() {
     super()
     this.state = {
-      img: ''
+      downloadURL: ''
     }
     this.changeHandler = this.changeHandler.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
@@ -14,13 +14,13 @@ class FormGroup extends Component {
   changeHandler(e) {
 
     this.setState({
-      img: e.target.value
+      downloadURL: e.target.value
     })
   }
   handleSubmit(e) {
 
     e.preventDefault()
-    this.props.addImg(this.state.img)
+    this.props.addImg(this.state.downloadURL)
 
   }
   render() {
